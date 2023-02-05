@@ -1,4 +1,8 @@
 from art import *
+from colorama import init, Fore
+from colorama import Back
+from colorama import Style
+init(autoreset=True)
 Art = tprint('factorial')
 
 
@@ -8,4 +12,5 @@ def factorial(n):
     return n * factorial(n-1)
 
 
-print(factorial(int(input("введите число: "))))
+t = int(input(Fore.RED + Style.BRIGHT + 'введите число: '))
+print(factorial(t))
