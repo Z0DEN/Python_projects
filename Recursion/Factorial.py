@@ -1,5 +1,5 @@
 from art import *
-Art = text2art("factorial", font='block', chr_ignore=True)
+Art = tprint('factorial')
 
 
 def factorial(n):
@@ -8,4 +8,4 @@ def factorial(n):
     return n * factorial(n-1)
 
 
-print(factorial(input("введите число")))
+print(factorial(int(input("введите число: "))))
