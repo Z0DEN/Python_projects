@@ -1,7 +1,3 @@
-from art import *
-
-
-
 def summa(num):
     sum = 0
     while num > 0:
