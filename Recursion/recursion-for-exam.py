@@ -1,14 +1,10 @@
 def f(n):
-    if n <= 3:
-        return n
-    if n > 3:
-        if n % 2 == 0:
-            return 2 * n * n + f(n-1)
-        return n * n* n + n + f(n-1)
+    if n == 1:
+        return 1
+    if n > 1:
+        return (2 * n - 1) * f(n-1)
 
-
-t = 0
-for n in range (1, 1001):
-  if f(n) < 10**3:
-    t += 1
-print(t)
+t = f(16)
+y = f(13)
+h = t // y
+print("", "t = ", t, "\n", "y = ", y, "\n","h = " ,h)
