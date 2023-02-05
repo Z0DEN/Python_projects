@@ -12,5 +12,5 @@ def factorial(n):
     return n * factorial(n-1)
 
 
-t = int(input(Fore.RED + Style.BRIGHT + 'введите число: '))
+t = int(input(Fore.GREEN + Style.BRIGHT + 'введите число: '))
 print(factorial(t))
