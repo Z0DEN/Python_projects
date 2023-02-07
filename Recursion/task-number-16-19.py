@@ -1,6 +1,6 @@
 def f(n):
     if n <= 18:
-        return n*n+3*n+5
+        return n+3
     if n > 18 and n % 3 == 0:
         return (n // 3) * f(n // 3) + n - 12
     if n > 18 and n % 3 != 0:
@@ -12,16 +12,12 @@ def f(n):
 #   m --- количество чисел с 2-мя нулями
 
 
-m = 0
+k = 0
 for n in range(1, 801):
     a = abs(f(n))
-    k = 0
-    t = 0
     while a > 0:
-        if ((a % 10) % 2) == 0:
+            if ((a % 10) % 2) != 0:
+                break
+            a //= 10
             k += 1
-        a //= 10
-        t += 1
-    if k == t:
-        m += 1
-print(m)
+print('', 'число a =', a, '\n', 'число k =', k)
