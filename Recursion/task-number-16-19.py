@@ -1,3 +1,6 @@
+from sys import *
+setrecursionlimit(5000)
+
 def f(n):
     if n <= 18:
         return n+3
@@ -13,11 +16,19 @@ def f(n):
 
 
 k = 0
+flag = 0
+count = 0
 for n in range(1, 801):
+    flag = 0
+    k = 0
     a = abs(f(n))
     while a > 0:
-            if ((a % 10) % 2) != 0:
-                break
+        flag += 1
+        if a % 10 % 2 != 0:
+            break
+        else:
             a //= 10
             k += 1
-print('', 'число a =', a, '\n', 'число k =', k)
+    if flag == k:
+        count += 1
+print("count -",count)
