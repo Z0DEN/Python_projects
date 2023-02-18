@@ -19,7 +19,7 @@ wb = Workbook()
 ws = wb.active
 ws1 = wb.create_sheet("Mysheet")
 
-im = Image.open("/home/blesk/GitHub/Python_projects/Excel/test.jpg")
+im = Image.open("/home/blesk/GitHub/Python_projects/cropped_image.jpg (1)")
 pixels = im.load() # список с пикселями
 x, y = im.size # ширина (x) и высота (y) изображения
 
@@ -28,7 +28,7 @@ for i in range(x):
         r, g, b = pixels[i, j]
         rgb = f"{r}, {g}, {b}"
         hex = (''.join([f"{int(i):02x}" for i in rgb.split(',')]))
-        ws.cell(row=j+5, column=i+5).fill = PatternFill(start_color=f'{hex}', end_color=f'{hex}', fill_type="solid",)
+        ws.cell(row=j+19, column=i+19).fill = PatternFill(start_color=f'{hex}', end_color=f'{hex}', fill_type="solid",)
 
 wb.save('img-to-xlsx.xlsx')
 
