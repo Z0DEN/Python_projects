@@ -36,11 +36,11 @@ for i in range(x):
         hex = (''.join([f"{int(i):02x}" for i in rgb.split(',')]))
         ws.cell(row=j+1, column=i+1).fill = PatternFill(start_color=f'{hex}', end_color=f'{hex}', fill_type="solid",)
         if ((i*j)/(x*y))>deg:
-            print('process:''[',process,space[k:19],'] ---',degree,'%')
+            print('process:','[',process,space[k:19],'] ---',degree,'%')
             deg += 0.05
             degree += 5
             process += '#'
             k += 1
 wb.save('img-to-xlsx.xlsx')
 pro = '####################'
-print('process:''[',pro,']',' --- 100 %')
+print('process:','[',pro,']','--- 100 %')
