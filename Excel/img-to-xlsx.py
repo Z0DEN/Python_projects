@@ -19,7 +19,7 @@ wb = Workbook()
 ws = wb.active
 ws1 = wb.create_sheet("Mysheet")
 
-im = Image.open("/home/blesk/GitHub/Python_projects/cropped_image.jpg (1)")
+im = Image.open("/home/blesk/GitHub/Python_projects/Excel/test.jpg")
 pixels = im.load() # список с пикселями
 x, y = im.size # ширина (x) и высота (y) изображения
 
