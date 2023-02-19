@@ -28,7 +28,7 @@ for i in range(x):
         r, g, b = pixels[i, j]
         rgb = f"{r}, {g}, {b}"
         hex = (''.join([f"{int(i):02x}" for i in rgb.split(',')]))
-        ws.cell(row=j+19, column=i+19).fill = PatternFill(start_color=f'{hex}', end_color=f'{hex}', fill_type="solid",)
+        ws.cell(row=j+1, column=i+1).fill = PatternFill(start_color=f'{hex}', end_color=f'{hex}', fill_type="solid",)
 
 wb.save('img-to-xlsx.xlsx')
 
