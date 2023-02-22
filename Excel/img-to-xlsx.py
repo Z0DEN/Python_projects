@@ -1,4 +1,3 @@
-import openpyxl
 from PIL import Image
 from openpyxl import Workbook
 from openpyxl import load_workbook
@@ -27,7 +26,7 @@ process = '#'
 count = 0
 deg = 0.05
 degree = 5
-space = '                        '
+space = '------------------------'
 k = 1
 for i in range(x):
     for j in range(y):
