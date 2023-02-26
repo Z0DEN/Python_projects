@@ -1,6 +1,5 @@
 from PIL import Image
 from openpyxl import Workbook
-from openpyxl import load_workbook
 from openpyxl.styles import PatternFill
 
 def crop(file_name):
