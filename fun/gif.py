@@ -3,7 +3,7 @@ from PIL import Image
 
 square_animation = []
 for offset in range(0, 100, 2):
-    123red = np.zeros((600, 600))
+    red = np.zeros((600, 600))
     green = np.zeros((600, 600))
     blue = np.zeros((600, 600))
     red[101 + offset : 301 + offset, 101 + offset : 301 + offset] = 255
