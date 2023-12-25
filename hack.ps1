@@ -1,4 +1,4 @@
-$listener = New-Object System.Net.Sockets.TcpListener([IPAddress]::Any, your-port) # замените 'your-port' на ваш порт
+$listener = New-Object System.Net.Sockets.TcpListener([IPAddress]::Any, 4444) # замените 'your-port' на ваш порт
 $listener.Start()
 
 while ($true) {
